@@ -1,0 +1,276 @@
+html {
+  font-size: 16px
+}
+
+/********
+ * body *
+ ********/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  font-family: 'Droid Serif', monospace, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 3px
+}
+
+.title,.title-about,.title-skills {
+  text-align: left;
+  font-size: 2rem;
+  border-bottom: 1px solid black
+}
+
+.title{
+  margin: 15vh 2vh 0vh !important
+}
+
+.title-about {
+  margin: 3vh 1vh 3vh !important;
+  padding: 1vw
+}
+
+.title-skills{
+font-size: 1.5rem !important;
+padding: 1vw
+}
+
+/* additional color for title*/
+
+.title span,
+.title-about span,
+.title-skills span {
+  color: #099bba
+}
+
+/**********
+ * NavBar *
+ **********/
+
+.nav>li {
+  color: #fff
+}
+
+/* scroll */
+
+.navbar-default {
+  transition: 500ms ease;
+  background: transparent
+}
+
+.navbar-default.scrolled {
+  background: #234099
+}
+
+/* nav */
+
+/* dropdown */
+
+.nav>li>.dropdown-menu {
+  background-color: #234099
+}
+
+.nav a:hover, .nav a.active, .dropdown a:focus, .dropdown a.active, .dropdown a:hover {
+  color: #3aceff !important;
+  border-bottom: 3px solid #3aceff;
+  background: transparent
+}
+
+/* toggler icon */
+
+.custom-toggler.navbar-toggler {
+  border-color: #3aceff
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='skyblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
+
+/***********
+ * Section *
+ ***********/
+
+section {
+  position: relative;
+  width: 100%;
+  overflow: hidden
+}
+
+/********
+ * Home *
+ ********/
+
+#home {
+  height: 100vh;
+  background: url(../images/header-background.jpg) center center no-repeat scroll;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  overflow: hidden
+}
+h1 #myH1,h1 #myH2,h1 #myH3 {
+  position:absolute;
+    display: block;
+    width: 100%
+}
+/*********
+ * About *
+ *********/
+
+.about_container {
+  margin-top: 10vw
+}
+/*social icon */
+
+.icon:hover {
+  opacity: 0.8
+}
+.social-links a {
+    font-size: 26px;
+    display: inline-block;
+    color: #000;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    margin-top: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-top: 1vw;
+  }
+.social-links .twitter:hover{
+  background:#00ACED;
+  color:#fff;
+  -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 2s;
+
+}
+.social-links .facebook:hover{
+  background:#3B579D;
+  color:#fff;
+  -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 2s;
+}
+.social-links .mail:hover{
+  background:#DD4A3A;
+  color:#fff;
+  -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 2s;
+}
+.social-links .github:hover{
+  background:#128f76;
+  color:#fff;
+  -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 2s;
+}
+.social-links .linkedin:hover{
+  background:#0077B5;
+  color:#fff;
+  -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.footer-contact .mail{
+  color:#fff
+}
+
+.footer-contact .mail:hover{
+  color:#18d36e
+}
+
+.about_details p {
+  letter-spacing: 1.2;
+  text-indent: 20%
+}
+
+/* table */
+
+.table-bordered td, .table-bordered th {
+  border-color: black !important
+}
+
+/****************************************
+ * Profile--experience,education,skills *
+*****************************************/
+
+.parag p {
+  letter-spacing: 1.2
+}
+
+/* other skills */
+
+ul li {
+  list-style: none
+}
+
+.skills_item {
+  margin: .8vh;
+  padding: .5vw;
+  border-radius: 5px;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  cursor: pointer
+}
+
+.skills_item:hover {
+  transform: scale(1.15);
+}
+
+/* diffent color for Beginner,Intermediate and Expert */
+
+.skills_beginner {
+  border-left: 1vw solid #8eccf0;
+  background-color: #deeefe
+}
+
+.skills_intermediate {
+  border-left: 1vw solid #dfca5c;
+  background-color: #f2f0e5
+}
+
+.skills_expert {
+  border-left: 1vw solid #59de5a;
+  background-color: #dffbea
+}
+
+/* footer at other skills */
+
+.skills_color_beginner::first-letter {
+  border-left: .5vw solid #8eccf0
+}
+
+.skills_color_intermediate::first-letter {
+  border-left: .5vw solid #dfca5c
+}
+
+.skills_color_expert::first-letter {
+  border-left: .5vw solid #59de5a
+}
+
+/*************
+ * portfolio *
+ *************/
+
+.work {
+  margin: 14vh 2vh
+}
+
+img {
+  border-radius: 3px;
+  cursor: pointer;
+ }
+/**********
+ * footer *
+ **********/
+
+footer {
+  bottom: 0;
+}
